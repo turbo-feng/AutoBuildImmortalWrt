@@ -65,7 +65,42 @@ PACKAGES="$PACKAGES openssh-sftp-server"
 # 文件管理器
 PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
 # 静态文件服务器dufs(推荐)
-PACKAGES="$PACKAGES luci-i18n-dufs-zh-cn"
+#PACKAGES="$PACKAGES luci-i18n-dufs-zh-cn"
+
+# ram释放
+PACKAGES="$PACKAGES luci-app-ramfree"
+PACKAGES="$PACKAGES luci-i18n-ramfree-zh-cn"
+#CF隧道
+PACKAGES="$PACKAGES luci-app-cloudflared"
+PACKAGES="$PACKAGES luci-i18n-cloudflared-zh-cn"
+# 自动端口映射，在外网访问服务&&内网设备访问外网
+PACKAGES="$PACKAGES luci-app-upnp"
+PACKAGES="$PACKAGES luci-i18n-upnp-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-natmap-zh-cn"
+PACKAGES="$PACKAGES luci-app-natmap"
+# 内网穿透
+PACKAGES="$PACKAGES luci-i18n-ddns-go-zh-cn"
+PACKAGES="$PACKAGES luci-app-ddns-go"
+# 跨平台链接下载
+#PACKAGES="$PACKAGES luci-i18n-aria2-zh-cn"
+#PACKAGES="$PACKAGES luci-app-aria2"
+# 在线升级
+PACKAGES="$PACKAGES luci-i18n-attendedsysupgrade-zh-cn"
+PACKAGES="$PACKAGES luci-app-attendedsysupgrade"
+# DNS选择，提高网页速度
+PACKAGES="$PACKAGES luci-i18n-smartdns-zh-cn"
+# 系统信息统计
+PACKAGES="$PACKAGES luci-i18n-statistics-zh-cn"
+PACKAGES="$PACKAGES luci-app-statistics"
+# 拦截IP
+PACKAGES="$PACKAGES luci-i18n-banip-zh-cn"
+PACKAGES="$PACKAGES luci-app-banip"
+#网易云音乐解锁
+PACKAGES="$PACKAGES luci-app-unblockneteasemusic"
+# KMS服务器激活
+PACKAGES="$PACKAGES luci-app-vlmcsd"
+PACKAGES="$PACKAGES luci-i18n-vlmcsd-zh-cn"
+
 # ======== shell/custom-packages.sh =======
 # 合并imm仓库以外的第三方插件
 PACKAGES="$PACKAGES $CUSTOM_PACKAGES"
