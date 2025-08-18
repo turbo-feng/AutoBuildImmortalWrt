@@ -45,5 +45,3 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-taskplan"
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-taskplan-zh-cn"
 # 集客AC
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-gecoosac gecoosac"
-## mlx5  cx4驱动
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES kmod-mlx5-core"
