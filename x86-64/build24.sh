@@ -98,6 +98,7 @@ PACKAGES="$PACKAGES luci-app-unblockneteasemusic"
 # KMS服务器激活
 PACKAGES="$PACKAGES luci-app-vlmcsd"
 PACKAGES="$PACKAGES luci-i18n-vlmcsd-zh-cn"
+PACKAGES="$PACKAGES kmod-mlx5-core"
 
 # ======== shell/custom-packages.sh =======
 # 合并imm仓库以外的第三方插件
