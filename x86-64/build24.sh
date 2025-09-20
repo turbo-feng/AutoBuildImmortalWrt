@@ -75,7 +75,6 @@ PACKAGES="$PACKAGES luci-i18n-cloudflared-zh-cn"
 #PACKAGES="$PACKAGES luci-app-upnp"
 #PACKAGES="$PACKAGES luci-i18n-upnp-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-natmap-zh-cn"
-PACKAGES="$PACKAGES luci-app-natmap"
 # 动态域名DDNS+皎月连
 PACKAGES="$PACKAGES luci-i18n-ddns-go-zh-cn"
 PACKAGES="$PACKAGES luci-app-ddns-go"
