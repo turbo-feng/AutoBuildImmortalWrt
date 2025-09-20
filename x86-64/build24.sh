@@ -97,7 +97,7 @@ PACKAGES="$PACKAGES luci-app-unblockneteasemusic"
 # KMS服务器激活
 PACKAGES="$PACKAGES luci-app-vlmcsd"
 PACKAGES="$PACKAGES luci-i18n-vlmcsd-zh-cn"
-#############核心包
+#############核心包,仓库自带，不算三方包
 PACKAGES="$PACKAGES kmod-mlx5-core"
 
 # ======== shell/custom-packages.sh =======
