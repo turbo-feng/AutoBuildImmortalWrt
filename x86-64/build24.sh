@@ -75,10 +75,9 @@ PACKAGES="$PACKAGES luci-i18n-cloudflared-zh-cn"
 #PACKAGES="$PACKAGES luci-app-upnp"
 #PACKAGES="$PACKAGES luci-i18n-upnp-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-natmap-zh-cn"
-# 动态域名DDNS+皎月连
+# 动态域名DDNS
 PACKAGES="$PACKAGES luci-i18n-ddns-go-zh-cn"
 PACKAGES="$PACKAGES luci-app-ddns-go"
-PACKAGES="$PACKAGES luci-app-natpierce"
 # 跨平台链接下载
 #PACKAGES="$PACKAGES luci-i18n-aria2-zh-cn"
 #PACKAGES="$PACKAGES luci-app-aria2"
