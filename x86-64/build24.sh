@@ -72,13 +72,14 @@ PACKAGES="$PACKAGES luci-i18n-ramfree-zh-cn"
 PACKAGES="$PACKAGES luci-app-cloudflared"
 PACKAGES="$PACKAGES luci-i18n-cloudflared-zh-cn"
 # 自动端口映射，在外网访问服务&&内网设备访问外网
-PACKAGES="$PACKAGES luci-app-upnp"
-PACKAGES="$PACKAGES luci-i18n-upnp-zh-cn"
+#PACKAGES="$PACKAGES luci-app-upnp"
+#PACKAGES="$PACKAGES luci-i18n-upnp-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-natmap-zh-cn"
 PACKAGES="$PACKAGES luci-app-natmap"
-# 内网穿透
+# 动态域名DDNS+皎月连
 PACKAGES="$PACKAGES luci-i18n-ddns-go-zh-cn"
 PACKAGES="$PACKAGES luci-app-ddns-go"
+PACKAGES="$PACKAGES luci-app-natpierce"
 # 跨平台链接下载
 #PACKAGES="$PACKAGES luci-i18n-aria2-zh-cn"
 #PACKAGES="$PACKAGES luci-app-aria2"
@@ -98,6 +99,7 @@ PACKAGES="$PACKAGES luci-app-unblockneteasemusic"
 # KMS服务器激活
 PACKAGES="$PACKAGES luci-app-vlmcsd"
 PACKAGES="$PACKAGES luci-i18n-vlmcsd-zh-cn"
+#############核心包
 PACKAGES="$PACKAGES kmod-mlx5-core"
 
 # ======== shell/custom-packages.sh =======
