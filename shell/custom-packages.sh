@@ -50,4 +50,4 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-taskplan-zh-cn"
 # Easytier
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES easytier luci-app-easytier"
 # 皎月连
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-natmap"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-natpierce"
