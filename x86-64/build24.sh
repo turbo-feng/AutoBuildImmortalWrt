@@ -99,6 +99,8 @@ PACKAGES="$PACKAGES luci-app-vlmcsd"
 PACKAGES="$PACKAGES luci-i18n-vlmcsd-zh-cn"
 #############核心包,仓库自带，不算三方包
 PACKAGES="$PACKAGES kmod-mlx5-core"
+PACKAGES="$PACKAGES qemu-ga"
+
 
 # ======== shell/custom-packages.sh =======
 # 合并imm仓库以外的第三方插件
