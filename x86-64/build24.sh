@@ -73,8 +73,8 @@ PACKAGES="$PACKAGES luci-i18n-cloudflared-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-ddns-go-zh-cn"
 PACKAGES="$PACKAGES luci-app-ddns-go"
 # 自动端口映射，在外网访问服务&&内网设备访问外网
-#PACKAGES="$PACKAGES luci-app-upnp"
-#PACKAGES="$PACKAGES luci-i18n-upnp-zh-cn"
+PACKAGES="$PACKAGES luci-app-upnp"
+PACKAGES="$PACKAGES luci-i18n-upnp-zh-cn"
 # 在线升级
 PACKAGES="$PACKAGES luci-i18n-attendedsysupgrade-zh-cn"
 PACKAGES="$PACKAGES luci-app-attendedsysupgrade"
@@ -86,7 +86,7 @@ PACKAGES="$PACKAGES luci-app-statistics"
 # 拦截IP
 PACKAGES="$PACKAGES luci-i18n-banip-zh-cn"
 PACKAGES="$PACKAGES luci-app-banip"
-#网易云音乐解锁
+# 网易云音乐解锁
 PACKAGES="$PACKAGES luci-app-unblockneteasemusic"
 # KMS服务器激活
 PACKAGES="$PACKAGES luci-app-vlmcsd"
