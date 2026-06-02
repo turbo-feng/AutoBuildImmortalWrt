@@ -27,7 +27,7 @@ else
   # ============= 同步第三方插件库==============
   # 同步第三方软件仓库run/apk
   echo "🔄 正在同步第三方软件仓库 Cloning run file repo..."
-  git clone --depth=1 https://github.com/wukongdaily/apk.git /tmp/store-apk-repo
+#    git clone --depth=1 https://github.com/wukongdaily/apk.git /tmp/store-apk-repo
 ###########################                 使用自建仓库                          ##########################3
 git clone --depth=1 https://github.com/turbo-feng/imm-store.git /tmp/store-apk-repo
 
