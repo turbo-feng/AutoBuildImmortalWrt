@@ -27,7 +27,10 @@ else
   # ============= 同步第三方插件库==============
   # 同步第三方软件仓库run/ipk
   echo "🔄 正在同步第三方软件仓库 Cloning run file repo..."
-  git clone --depth=1 https://github.com/wukongdaily/store.git /tmp/store-run-repo
+########  
+#  git clone --depth=1 https://github.com/wukongdaily/store.git /tmp/store-run-repo
+##########################       使用自建仓库      ##########################
+git clone --depth=1 https://github.com/turbo-feng/imm-store.git /tmp/store-run-repo  
 
   # 拷贝 run/x86 下所有 run 文件和ipk文件 到 extra-packages 目录
   mkdir -p /home/build/immortalwrt/extra-packages
@@ -43,11 +46,12 @@ fi
 # 输出调试信息
 echo "$(date '+%Y-%m-%d %H:%M:%S') - 开始构建固件..."
 
+############################################################################################################
 # ============= imm仓库内的插件==============
 # 定义所需安装的包列表 下列插件你都可以自行删减
 PACKAGES=""
 PACKAGES="$PACKAGES curl"
-PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
+# PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"  磁盘管理和文件管理器多余
 PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
 PACKAGES="$PACKAGES luci-theme-argon"
 PACKAGES="$PACKAGES luci-app-argon-config"
@@ -55,10 +59,47 @@ PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
 #24.10
 PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
+PACKAGES="$PACKAGES luci-app-openclash"
+PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
+# PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"  会多出NAS管理菜单
+# PACKAGES="$PACKAGES luci-i18n-dufs-zh-cn" 静态文件服务器dufs(推荐) 配合samba实现远程轻nas管理
 
 # 文件管理器
 PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
+# ram释放
+PACKAGES="$PACKAGES luci-app-ramfree"
+PACKAGES="$PACKAGES luci-i18n-ramfree-zh-cn"
+#CF隧道
+PACKAGES="$PACKAGES luci-app-cloudflared"
+PACKAGES="$PACKAGES luci-i18n-cloudflared-zh-cn"
+# 动态域名DDNSGO
+PACKAGES="$PACKAGES luci-i18n-ddns-go-zh-cn"
+PACKAGES="$PACKAGES luci-app-ddns-go"
+# 自动端口映射，在外网访问服务&&内网设备访问外网
+PACKAGES="$PACKAGES luci-app-upnp"
+PACKAGES="$PACKAGES luci-i18n-upnp-zh-cn"
+# 在线升级
+PACKAGES="$PACKAGES luci-i18n-attendedsysupgrade-zh-cn"
+PACKAGES="$PACKAGES luci-app-attendedsysupgrade"
+# DNS选择，提高网页速度
+PACKAGES="$PACKAGES luci-i18n-smartdns-zh-cn"
+# 系统信息统计
+PACKAGES="$PACKAGES luci-i18n-statistics-zh-cn"
+PACKAGES="$PACKAGES luci-app-statistics"
+# 拦截IP
+PACKAGES="$PACKAGES luci-i18n-banip-zh-cn"
+PACKAGES="$PACKAGES luci-app-banip"
+# 网易云音乐解锁
+PACKAGES="$PACKAGES luci-app-unblockneteasemusic"
+# KMS服务器激活
+PACKAGES="$PACKAGES luci-app-vlmcsd"
+PACKAGES="$PACKAGES luci-i18n-vlmcsd-zh-cn"
+
+#############    核心包,仓库自带，PVE必装  ######################
+PACKAGES="$PACKAGES kmod-mlx5-core"
+PACKAGES="$PACKAGES qemu-ga"
 # ======== shell/custom-packages.sh =======
 # 合并imm仓库以外的第三方插件
 PACKAGES="$PACKAGES $CUSTOM_PACKAGES"
